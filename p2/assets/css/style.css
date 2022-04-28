@@ -1,0 +1,60 @@
+.container-fluid {
+    font-family: "Courier New", Courier, monospace;    
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+.row:first-child,
+.form-control,
+.form-control:focus,
+.btn {
+    background-color: #24292E;    
+}
+
+.row:first-child,
+.row > div {
+    padding: 10px;
+}
+
+.row:first-child div {
+    align-items: center;
+    display: flex;
+}
+
+.row div img {
+    float: left;
+}
+
+h2 {    
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+h2,
+.form-control,
+.form-control:focus,
+svg {
+    color: #FFF;
+}
+
+.form-control::placeholder {
+    color: #999;
+}
+
+.form-control,
+.form-control:focus,
+.btn {
+    border: solid 1px #999;
+}
+
+.form-control:focus,
+.btn:focus {
+    box-shadow: none;
+}
+
+.btn {
+    border-radius: 0 4px 4px 0;
+}
