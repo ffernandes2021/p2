@@ -18,7 +18,7 @@ function getCidade(nomeCidade) {
         getPrevisaoTempoProximosQuatroDias($(data).find("id").text());
     })
     .fail(function (jqXHR) {
-        console.log("Erro HTTP: " + jqXHR.status);
+        localContent.html("<h3>Erro HTTP: " + jqXHR.status + "</h3>");
     });
 }
 
@@ -32,6 +32,6 @@ function getPrevisaoTempoProximosQuatroDias(codigoCidade) {
         console.log(data);
     })
     .fail(function (jqXHR) {
-        console.log("Erro HTTP: " + jqXHR.status);
+        localContent.html("<h3>Erro HTTP: " + jqXHR.status + "</h3>");
     });
 }
