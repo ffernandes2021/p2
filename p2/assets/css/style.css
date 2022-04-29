@@ -10,8 +10,7 @@
 .row:first-child,
 .form-control,
 .form-control:focus,
-.btn,
-h3 {
+.btn {
     background-color: #24292E;
 }
 
@@ -60,4 +59,8 @@ svg {
 
 .btn {
     border-radius: 0 4px 4px 0;
+}
+
+h3 {
+    color: #24292E;
 }
