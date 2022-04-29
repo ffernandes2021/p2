@@ -10,12 +10,14 @@
 .row:first-child,
 .form-control,
 .form-control:focus,
-.btn {
+.btn,
+h3 {
     background-color: #24292E;
 }
 
 .row:first-child,
-.row > div {
+.row > div,
+h3 {
     padding: 10px;
 }
 
