@@ -7,20 +7,18 @@
     margin: 0;
 }
 
-.row:first-child,
+.box {
+    padding: 10px;
+}
+
+.container-fluid > .row:first-child,
 .form-control,
 .form-control:focus,
 .btn {
     background-color: #24292E;
 }
 
-.row:first-child,
-.row > div,
-h3 {
-    padding: 10px;
-}
-
-.row:first-child div {
+.container-fluid > .row:first-child div {
     align-items: center;
     display: flex;
 }
@@ -30,7 +28,7 @@ h3 {
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 28px;
     margin-bottom: 0;
     margin-left: 10px;
 }
