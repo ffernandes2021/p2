@@ -4,7 +4,7 @@ function isEmpty() {
     if ($.trim($("#cidade").val()) === "") {
         localContent.html("<h3>Informe a cidade para que a pesquisa seja realizada!</h3>");
     } else {
-        getCidade($("#cidade").val().normalize("NFD").replace(/[^a-zA-Zs]+$/g, ""));
+        getCidade($("#cidade").val().normalize("NFD").replace(/[^a-zA-Z\s]+$/g, ""));
     }
 }
 
