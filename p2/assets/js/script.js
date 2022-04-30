@@ -5,7 +5,7 @@ function isEmpty() {
         localContent.html("<h3>Informe a cidade para que a pesquisa seja realizada!</h3>");
     } else {
         // regex: remove caracteres especiais
-        getCidade($("#cidade").val().normalize("NFD").replace(/[^\d]+/g, ""));
+        getCidade($("#cidade").val().replace(/[^\d]+/g, ""));
 
         
     }
