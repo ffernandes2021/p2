@@ -7,7 +7,7 @@ function isEmpty() {
         // regex: remove caracteres especiais
 
 
-        let nomeCidade = $("#cidade").val().normalize("NFD").replace(/[^a-zA-Zs*$]/g, "");
+        let nomeCidade = $("#cidade").val().normalize("NFD").replace(/[^a-zA-Z\s]+$/g, "");
 
         // getCidade($("#cidade").val().replace(/[^\d]+/g, ""));
         getCidade(nomeCidade);
