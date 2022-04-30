@@ -4,15 +4,7 @@ function isEmpty() {
     if ($.trim($("#cidade").val()) === "") {
         localContent.html("<h3>Informe a cidade para que a pesquisa seja realizada!</h3>");
     } else {
-        // regex: remove caracteres especiais
-
-
-        let nomeCidade = $("#cidade").val().replace(/[^\da-zA-Z\d]+$/, "");
-
-        // getCidade($("#cidade").val().replace(/[^\d]+/g, ""));
-        getCidade(nomeCidade);
-
-        
+        getCidade($("#cidade").val().normalize("NFD").replace(/[^a-zA-Z\s]/g, ""));
     }
 }
 
