@@ -29,7 +29,7 @@ h3 {
 }
 
 h2 {
-    font-size: 28px;    
+    font-size: 28px;
     margin-left: 10px;
 }
 
@@ -67,7 +67,7 @@ svg {
 
 h3,
 p {
-    color: #24292E; 
+    color: #24292E;
 }
 
 h3 {
@@ -86,6 +86,10 @@ div p:nth-child(2) {
 
 div p:nth-child(2) {
     font-size: 16px;
+}
+
+div p:nth-child(2)::first-letter {
+    text-transform: capitalize;
 }
 
 div p:nth-child(3) {
