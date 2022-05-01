@@ -14,12 +14,12 @@ function getCidade(nomeCidade) {
         method: "get",
         dataType: "xml"
     })
-            .done(function (data) {
-                getPrevisaoTempoProximosQuatroDias($(data).find("id").text());
-            })
-            .fail(function (jqXHR) {
-                localContent.html("<h3>Erro HTTP: " + jqXHR.status + "</h3>");
-            });
+    .done(function (data) {
+        getPrevisaoTempoProximosQuatroDias($(data).find("id").text());
+    })
+    .fail(function (jqXHR) {
+        localContent.html("<h3>Erro HTTP: " + jqXHR.status + "</h3>");
+    });
 }
 
 function getPrevisaoTempoProximosQuatroDias(codigoCidade) {
