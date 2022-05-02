@@ -77,6 +77,9 @@ h3 {
 div p:first-child {
     font-size: 18px;
     font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 div p:first-child,
@@ -94,4 +97,10 @@ div p:nth-child(2)::first-letter {
 
 div p:nth-child(3) {
     font-size: 14px;
+}
+
+iframe {
+    border: none;
+    height: 100px;
+    width: 100px;
 }
